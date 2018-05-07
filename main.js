@@ -10,10 +10,19 @@ function yearOfBirth(age){
       }
     }
 
+    if (isNAN(age) === true){
+      console.error("not a number")
+    }
+
     return 2016-age;
+
 }
 
 function whoAmI(name, age){
+  if (typeOf(name) !== "string") {
+    console.error("not a string")
+  }
+
   if (name===null|| age===null){
     console.error('Arguments not valid');
   }
@@ -22,6 +31,9 @@ function whoAmI(name, age){
   var yob = yearOfBirth(age);
 
   console.log(`I was born in ${yob}`);
+
+
+
 }
 
 whoAmI();
