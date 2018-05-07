@@ -14,6 +14,9 @@ function yearOfBirth(age){
 }
 
 function whoAmI(name, age){
+  if (name===null|| age===null){
+    console.error('Arguments not valid');
+  }
   console.log(`Hi, my name is ${name} and I'm ${age} years old`);
 
   var yob = yearOfBirth(age);
