@@ -1,5 +1,15 @@
 
 function yearOfBirth(age){
+
+    if (age < 0){
+      try{
+        throw new Error("Age can not be negative");
+      }
+      catch(e){
+        alert("no negatve age");
+      }
+    }
+
     return 2016-age;
 }
 
