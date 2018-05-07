@@ -72,16 +72,16 @@ function daysInMonth (month, leapyear){
     case 'August':
     case 'October':
     case 'December':
-      console.log ( `${month} has 31 days.`);
+      //console.log ( `${month} has 31 days.`);
     break;
    case 'April':
     case 'June':
     case 'September':
     case 'November':
-    console.log(`${month} has 30 days.`);
+  //  console.log(`${month} has 30 days.`);
     break;
     default:
-    console.error('not a valid month')
+  //  console.error('not a valid month')
 }
 /*
 switch(month){
@@ -95,5 +95,36 @@ switch(month){
   break;*/
 
 }
-console.log(daysInMonth('bob'));
+//console.log(daysInMonth('bob'));
+//------------////////////////////
+function compareValues(a,b){
+  //a = 1,2,3
+  //b = 1,2,3
+  //take the perepective of player a. if player a wins/ player b loses
+  if (a === b){
+    return "draw";
+  } else {
+    return "win"
+  }
+}
+console.log(compareValues(2,2));
+console.log(compareValues(1,3));
 
+function rockpaperscissors(opt){
+  const randomNo = Math.floor(Math.random() * 3) + 1;
+  var rock = 1;
+  var paper = 2;
+  var scissors = 3;
+
+  //how are the values supposed to be compared?
+  //an area to compare your scores and the computer are needed?
+/*  let playfield =
+  //switch(opt){
+    case "win":
+      rock
+  }*/
+
+
+
+
+}
