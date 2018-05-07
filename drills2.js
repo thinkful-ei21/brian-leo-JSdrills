@@ -1,4 +1,4 @@
-function jediname(firstName,lastName){
+/*function jediname(firstName,lastName){
     let jedifirst = firstName.slice(0, 2);
 
     let jedilast = lastName.slice(0, 3);
@@ -60,3 +60,40 @@ function decode(words){
 }
 
 decode("craft block argon meter bells brown croon droop");
+*/
+
+
+function daysInMonth (month, leapyear){
+  switch (month){
+    case 'January':
+    case 'March':
+    case 'May':
+    case 'July':
+    case 'August':
+    case 'October':
+    case 'December':
+      console.log ( `${month} has 31 days.`);
+    break;
+   case 'April':
+    case 'June':
+    case 'September':
+    case 'November':
+    console.log(`${month} has 30 days.`);
+    break;
+    default:
+    console.error('not a valid month')
+}
+/*
+switch(month){
+
+  case 'February':
+  if (leapyear===true){
+    console.log(`${month} has 29 days.`);
+  }
+  else {console.log(`${month} has 28 days.`);
+  }
+  break;*/
+
+}
+console.log(daysInMonth('bob'));
+
